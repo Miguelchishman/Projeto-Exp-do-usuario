@@ -1,6 +1,6 @@
 body {
   background-color: #91b1e6;
-  color: white;
+  color: black;
 }
 
 .suasConsultas{
@@ -22,6 +22,12 @@ img {
     background-color: #bdd1f2;
     width:70%;
     padding-bottom: 1%;
+}
+
+.maisConsultas{
+    color:black;
+    text-align: center;
+    margin-top: 3%;
 }
 
 .cardsConsultas{
