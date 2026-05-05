@@ -1,11 +1,18 @@
 body {
-  background-color: #91b1e6;
-  color: black;
+  background-color: #a3c4f8;
+  color: rgb(255, 255, 255);
 }
 
 .suasConsultas{
     text-align: center;
     margin-top: 3%;
+}
+/* cor do suas*/
+mark {
+    background-color: #2b6eb6;  
+    color: white;              
+    padding: 2px 15px;
+    border-radius: 6px;
 }
 
 img {
@@ -15,17 +22,16 @@ img {
 }
 
 .corPadrao{
-    background-color: #bdd1f2;
+    background-color: #4577c6;
 }
 
 .centroTela{
-    background-color: #bdd1f2;
-    width:70%;
-    padding-bottom: 1%;
+    background-color: #ccdffe;
+    width:50%;
 }
 
 .maisConsultas{
-    color:black;
+    color:rgb(0, 0, 0);
     text-align: center;
     margin-top: 3%;
 }
@@ -33,10 +39,8 @@ img {
 .cardsConsultas{
     margin-top: 5%;
     background-color: #bdd1f2;
-    padding-top:1%;
-    padding-bottom: 1%;
-    padding-left: 1%;
-    padding-right:1%;
+    border-radius: 10px;
+    padding: 18px 0px 0px;
 }
 
 .adicionarConsulta{
@@ -44,9 +48,14 @@ img {
     width: 5%;
 }
 .cardsIndividuais{
-    height: 7rem;
+    height: 9rem;
 }
 
-.botoes{
+.botoes .btn {
     margin-top: 3%;
+    min-width: 250px;
+}
+
+.nav-link ,.navbar-brand {
+    color: white; 
 }
