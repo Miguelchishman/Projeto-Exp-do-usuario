@@ -1,0 +1,46 @@
+body {
+  background-color: #91b1e6;
+  color: white;
+}
+
+.suasConsultas{
+    text-align: center;
+    margin-top: 3%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  
+}
+
+.corPadrao{
+    background-color: #bdd1f2;
+}
+
+.centroTela{
+    background-color: #bdd1f2;
+    width:70%;
+    padding-bottom: 1%;
+}
+
+.cardsConsultas{
+    margin-top: 5%;
+    background-color: #bdd1f2;
+    padding-top:1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right:1%;
+}
+
+.adicionarConsulta{
+    margin-top: 2%;
+    width: 5%;
+}
+.cardsIndividuais{
+    height: 7rem;
+}
+
+.botoes{
+    margin-top: 3%;
+}
