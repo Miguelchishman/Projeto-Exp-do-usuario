@@ -22,7 +22,8 @@ img {
 }
 
 .corPadrao{
-    background-color: #4577c6;
+    background: #3a85e8;
+background: linear-gradient(90deg, rgba(58, 133, 232, 1) 0%, rgba(108, 143, 217, 1) 57%, rgba(58, 133, 232, 1) 100%);
 }
 
 .centroTela{
