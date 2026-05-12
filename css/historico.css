@@ -1,0 +1,17 @@
+
+.caixa-historico{
+    background-color: #bdd1f2;
+    border-radius: 15px;
+    padding: 40px;         
+    margin-top: 40px;       
+
+}
+
+
+.caixas{
+    background-color: #ffffff;
+    height: 150px;          
+    width: 70%;        
+    margin-top: 20px;  
+
+}
