@@ -1,42 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel = "stylesheet">
-    <title>Document</title>
-    <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+        <link href="css/styles.css" rel="stylesheet">
+
+        <script src="js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg corPadrao">
-    <div class="container-fluid">
-        <form class="d-flex me-1">
-            <img src="images/MEDFEILogo.jpeg" alt="MEDFEI Logo" width = 40> 
-        </form>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="consultas.html">Consultas</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="calendario.html">Calendario</a>
-            </li>
-        </ul>
+        <div class="container-fluid">
+            <form class="d-flex">
+                <img src="images/MEDFEILogo.jpeg" alt="MEDFEI Logo" width=40>
+            </form>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-        <form class="d-flex ms-2">
-            <a href="perfil.html"><img src="images/Foto_perfil.webp" alt="Foto Generica Perfil de Usuario" width="45"></a>
-        </form>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="consultas.html">Consultas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calendario.html">Calendario</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex ms-2">
+                    <a href="perfil.html"><img src="images/Foto_perfil.webp" alt="Foto Generica Perfil de Usuario"
+                            width="45"></a>
+                </form>
+            </div>
         </div>
-    </div>
     </nav>
 
-</body>
-</html> 
+
+    <div class="container d-flex justify-content-center gap-3 mt-3">
+
+        <a class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#modalMedicamento">
+            <img src="images/Add.jpg" alt="Adicionar" style="width: 40px; height: 40px">
+        </a>
+
+        <span class="badge rounded-pill text-bg-light SeusMedicamentos fs-3 py-2 px-4 shadow-sm">
+            Seus Medicamentos
+        </span>
+    </div>
+
+
+    <div class="container caixa-remedios">
+        <div class="descricao d-flex align-items-start mb-5">
+            <input type="checkbox" class="form-check-input me-2 Tamanho-check">
+            <div class="icone me-4"></div>
+            <div class="flex-grow-1">
+                <div class="titulo">Paracetamol</div>
+                <ul class="detalhes">
+                    <li>Alívio da dor de estômago.</li>
+                    <li>8/8h - 5 dias na semana.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="descricao d-flex align-items-start mb-5">
+            <input type="checkbox" class="form-check-input me-2 Tamanho-check" check>
+            <div class="icone me-4"></div>
+            <div class="flex-grow-1">
+                <div class="titulo">Dipirona</div>
+                <ul class="detalhes">
+                    <li>Alívio da dor de cabeça.</li>
+                    <li>8/8h - 5 dias na semana.</li>
+                    <li>Após as refeições.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="descricao d-flex align-items-start mb-5">
+            <input type="checkbox" class="form-check-input me-2 Tamanho-check">
+            <div class="icone me-4"></div>
+            <div class="flex-grow-1">
+                <div class="titulo">Loratadina</div>
+                <ul class="detalhes">
+                    <li>Alívio da alergia.</li>
+                    <li>8/8h - 5 dias na semana.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container botoes d-flex justify-content-center sticky-bottom">
+        <div class="row">
+            <div class="col">
+                <a class="btn btn-light btn-lg" href="index.html" role="button">Voltar</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modalMedicamento" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0" style="background-color: #bdd1f2">
+
+                <div class="modal-header border-0 justify-content-center">
+                    <h5 class="modal-title fw-bold text-uppercase" id="exampleModalLabel">Novo Medicamento</h5>
+                </div>
+                <div class="modal-body px-4">
+                    <form>
+                        <div class="row mb-3 align-items-center">
+                            <label class="col-4 fw-bold">Nome da medicação:</label>
+                            <div class="col-8">
+                                <input type="text" id="nomeMed" class="form-control rounded-pill border-0 shadow-sm"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <label class="col-4 fw-bold">Razão:</label>
+                            <div class="col-8">
+                                <input type="text" id="razaoMed" class="form-control rounded-pill border-0 shadow-sm"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 align-items-center">
+                            <label class="col-3 fw-bold">Tempo:</label>
+                            <div class="col-9 d-flex align-items-center gap-2">
+                                <span>De:</span>
+                                <input type="text" id="tempoDe" class="form-control shadow-sm border-0"
+                                    style="width: 60px; border-radius: 10px;">
+                                <span>em</span>
+                                <input type="text" id="tempoEm" class="form-control shadow-sm border-0"
+                                    style="width: 60px; border-radius: 10px;">
+                                <span>horas</span>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4 align-items-center">
+                            <label class="col-4 fw-bold">Observações</label>
+                            <div class="col-8">
+                                <input type="text" id="obsMed" class="form-control rounded-pill border-0 shadow-sm">
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-light fw-bold px-4 py-2 shadow-sm"
+                                style="border-radius: 15px; width: 80%;">
+                                Cadastrar novo medicamento
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</html>
