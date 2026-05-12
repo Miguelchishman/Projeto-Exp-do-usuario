@@ -1,0 +1,32 @@
+.SeusMedicamentos {
+    font-size: 1.5rem; 
+    padding: 10px 20px;
+}
+
+.caixa-remedios{
+    background-color: #bdd1f2;
+    border-radius: 15px;/* Bordas arredondadas */
+    padding: 40px;         
+    margin-top: 40px;       
+
+}
+.icone {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.titulo {
+    background-color: #91b1e6; 
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 5px 15px; 
+}
+.Tamanho-check {
+    width: 25px ;
+    height: 25px ;
+    margin-top: 5px;
+}
+
