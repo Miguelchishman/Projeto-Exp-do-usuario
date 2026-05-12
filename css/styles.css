@@ -61,3 +61,30 @@ background: linear-gradient(90deg, rgba(58, 133, 232, 1) 0%, rgba(108, 143, 217,
 .nav-link ,.navbar-brand {
     color: black; 
 }
+
+body {
+        background-color: #a4c2e6; 
+        font-family: 'Arial', sans-serif; 
+    }
+    .btn-arredondado {
+        border-radius: 15px;
+    }
+
+    .text-primary {
+    color: #0d6efd !important; 
+    transition: transform 0.2s;
+    }
+    .text-primary:hover {
+    transform: scale(1.3); 
+}
+
+.btn-white:hover {
+    background-color: #f8f9fa !important;
+    transform: translateY(-2px);
+    transition: 0.2s;
+}
+
+.btn-white:active {
+    background-color: #e9ecef !important;
+    transform: scale(0.98);
+}
