@@ -7,12 +7,12 @@
     <link href="css/styles.css" rel = "stylesheet">
     <title>Document</title>
     <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 <body>
 
-        <nav class="navbar navbar-expand-lg corPadrao">
+<nav class="navbar navbar-expand-lg corPadrao">
     <div class="container-fluid">
         <form class="d-flex me-1">
             <img src="images/MEDFEILogo.jpeg" alt="MEDFEI Logo" width = 40> 
@@ -38,5 +38,97 @@
     </div>
     </nav>
 
+<div class="container d-flex flex-column align-items-center pt-4 pb-5">
+    
+    <h1 class="fw-bold text-dark text-center">NOVA CONSULTA</h1>
+    <h4 class="mb-4 fw-bold text-dark">Escolha uma data:</h4>
+
+    <div class="card border-0 rounded-4 shadow-sm w-100 p-3 mb-4" style="max-width: 400px;">
+        
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <button class="btn btn-sm btn-light fw-bold">&lt;</button>
+            <div class="d-flex gap-2">
+                <select class="form-select form-select-sm border-0 bg-light fw-bold">
+                    <option>Maio</option>
+                </select>
+                <select class="form-select form-select-sm border-0 bg-light fw-bold">
+                    <option>2026</option>
+                </select>
+            </div>
+            <button class="btn btn-sm btn-light fw-bold">&gt;</button>
+        </div>
+
+        <div class="text-center text-muted p-4">
+            <div class="card border-0 rounded-4 shadow-sm w-100 p-3 mb-4" style="max-width: 400px;">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <button class="btn btn-sm btn-light fw-bold">&lt;</button>
+        <div class="d-flex gap-2">
+            <select class="form-select form-select-sm border-0 bg-light fw-bold text-center">
+                <option>Maio</option>
+            </select>
+            <select class="form-select form-select-sm border-0 bg-light fw-bold text-center">
+                <option>2026</option>
+            </select>
+        </div>
+        <button class="btn btn-sm btn-light fw-bold">&gt;</button>
+    </div>
+
+    <table class="table table-borderless text-center mb-0">
+        <thead>
+            <tr class="text-muted small">
+                <th>Dom</th><th>Seg</th><th>Ter</th><th>Qua</th><th>Qui</th><th>Sex</th><th>Sab/th>
+            </tr>
+        </thead>
+        <tbody class="fw-bold">
+            <tr>
+                <td class="text-muted opacity-25">31</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td>
+            </tr>
+            <tr>
+                <td>7</td><td>8</td><td class="bg-dark text-white rounded-3">9</td><td>10</td><td>11</td><td>12</td><td class="bg-dark text-white rounded-3">13</td>
+            </tr>
+            <tr>
+                <td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td>
+            </tr>
+            </tbody>
+    </table>
+</div>
+            </div>
+    </div>
+
+    <h4 class="mb-3 fw-bold text-dark">Defina um horário:</h4>
+
+    <div class="card border-0 rounded-4 shadow-sm w-100 p-3 mb-5" style="max-width: 300px;">
+    <div class="d-flex justify-content-center text-center align-items-center">
+        
+        <div class="w-50 border-end border-2 d-flex flex-column align-items-center">
+            <h6 class="fw-bold mb-2">Horas</h6>
+            <div class="text-primary fs-5" style="cursor: pointer;">&#9652;</div> <div class="text-muted opacity-50 fs-4">11</div>
+            <div class="fw-bold fs-1">12</div>
+            <div class="text-muted opacity-50 fs-4">13</div>
+            <div class="text-primary fs-5" style="cursor: pointer;">&#9662;</div> </div>
+        
+        <div class="w-50 d-flex flex-column align-items-center">
+            <h6 class="fw-bold mb-2">Minutos</h6>
+            <div class="text-primary fs-5" style="cursor: pointer;">&#9652;</div> <div class="text-muted opacity-50 fs-4">59</div>
+            <div class="fw-bold fs-1">00</div>
+            <div class="text-muted opacity-50 fs-4">01</div>
+            <div class="text-primary fs-5" style="cursor: pointer;">&#9662;</div> </div>
+
+    </div>
+</div>
+
+    <div class="d-flex justify-content-between w-100 px-3" style="max-width: 500px;">
+        <a href="index.html" class="btn btn-light btn-arredondado px-4 py-2 fw-bold fs-5 shadow-sm">
+            &larr; Voltar
+        </a>
+        <a href="adicionarConsulta_Local.html"><button class="btn btn-light btn-arredondado px-4 py-2 fw-bold fs-5 shadow-sm">
+            Continuar
+        </button></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+   
+</div>
+
 </body>
-</html> 
+</html>
